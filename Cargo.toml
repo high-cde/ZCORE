@@ -1,0 +1,13 @@
+[package]
+name = "zcore"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Per le funzioni hash della blockchain (Quantum Ghostnet)
+sha2 = "0.10"
+# Per la gestione del kernel
+libc = "0.2"
+# Per la serializzazione deterministica dei blocchi
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
